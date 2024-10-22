@@ -60,11 +60,11 @@ namespace Kamgam.SettingsGenerator
         /// <returns></returns>
         public override int Get()
         {
-            if (Camera.main == null)
+            if (Camera.main == null || !HDDynamicResolutionPlatformCapabilities.FSR2Detected)
                 return 0;
 
             // Fetch from current camera
-            var settings = Camera.main.GetComponent<HDAdditionalCameraData>();
+            HDAdditionalCameraData settings = Camera.main.GetComponent<HDAdditionalCameraData>();
             if (settings == null || !settings.allowFidelityFX2SuperResolution)
                 return 0;
 
@@ -103,12 +103,10 @@ namespace Kamgam.SettingsGenerator
 
             if (index == 0)
             {
-                settings.allowDynamicResolution = false;
                 settings.allowFidelityFX2SuperResolution = false;
                 return;
             }
 
-            settings.allowDynamicResolution = true;
             settings.allowFidelityFX2SuperResolution = true;
             settings.fidelityFX2SuperResolutionUseOptimalSettings = true;
 

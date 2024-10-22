@@ -60,11 +60,11 @@ namespace Kamgam.SettingsGenerator
         /// <returns></returns>
         public override int Get()
         {
-            if (Camera.main == null)
+            if (Camera.main == null || !HDDynamicResolutionPlatformCapabilities.DLSSDetected)
                 return 0;
 
             // Fetch from current camera
-            var settings = Camera.main.GetComponent<HDAdditionalCameraData>();
+            HDAdditionalCameraData settings = Camera.main.GetComponent<HDAdditionalCameraData>();
             if (settings == null || !settings.allowDeepLearningSuperSampling)
                 return 0;
 
@@ -103,13 +103,10 @@ namespace Kamgam.SettingsGenerator
 
             if (index == 0)
             {
-                settings.allowDynamicResolution = false;
                 settings.allowDeepLearningSuperSampling = false;
                 return;
             }
 
-            settings.allowDynamicResolution = true;
-            settings.allowDeepLearningSuperSampling = true;
             settings.allowDeepLearningSuperSampling = true;
             settings.deepLearningSuperSamplingUseCustomQualitySettings = true;
 

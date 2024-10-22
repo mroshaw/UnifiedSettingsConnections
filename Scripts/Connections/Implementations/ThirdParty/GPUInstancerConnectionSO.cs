@@ -3,10 +3,10 @@ using UnityEngine.Audio;
 
 namespace Kamgam.SettingsGenerator
 {
-    [CreateAssetMenu(fileName = "UnityFSR2Connection", menuName = "SettingsGenerator/Connection/UnifiedSettingsPlus/UnityFSR2Connection", order = 1)]
-    public class UnityFSR2ConnectionSO : OptionConnectionSO
+    [CreateAssetMenu(fileName = "GpuInstancerConnection", menuName = "SettingsGenerator/Connection/UnifiedSettingsPlus/GpuInstancerConnection", order = 1)]
+    public class GPUInstancerConnectionSO : OptionConnectionSO
     {
-        protected UnityFSR2Connection _connection;
+        protected GPUInstancerConnection _connection;
 
         public override IConnectionWithOptions<string> GetConnection()
         {
@@ -18,7 +18,7 @@ namespace Kamgam.SettingsGenerator
 
         public void Create()
         {
-            _connection = new UnityFSR2Connection();
+            _connection = new GPUInstancerConnection();
         }
 
         public override void DestroyConnection()

@@ -3,7 +3,7 @@ using UnityEngine.Audio;
 
 namespace Kamgam.SettingsGenerator
 {
-    [CreateAssetMenu(fileName = "UnityDLSSConnection", menuName = "SettingsGenerator/Connection/UnityDLSSConnection", order = 4)]
+    [CreateAssetMenu(fileName = "UnityDLSSConnection", menuName = "SettingsGenerator/Connection/UnifiedSettingsPlus/UnityDLSSConnection", order = 1)]
     public class UnityDLSSConnectionSO : OptionConnectionSO
     {
         protected UnityDLSSConnection _connection;

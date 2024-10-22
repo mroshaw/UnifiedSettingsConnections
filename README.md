@@ -1,5 +1,5 @@
-# Unified Settings Plus
-A collection of "Connections" scripts that provide settings management for a number of properties, for use with the [Unified Settings asset by Kamgam](https://assetstore.unity.com/packages/tools/gui/settings-game-options-unified-menu-240015).
+# Unified Settings Connections
+A collection of "Connections" scripts that provide settings management for a number of properties, for use with the amazing [Unified Settings asset by Kamgam](https://assetstore.unity.com/packages/tools/gui/settings-game-options-unified-menu-240015).
 
 The following connections are currently available:
 
@@ -30,4 +30,4 @@ Over time, I may implement BIRP and URP versions of these, but my primary use ca
 
 ## Support
 
-Provided "AS IS". Please consult the source code and Unified Settings user guides.
+Provided "AS IS". Please consult the source code and Unified Settings user guides. Feel free to create issues in the repository, though it may take me a little time to get to them.

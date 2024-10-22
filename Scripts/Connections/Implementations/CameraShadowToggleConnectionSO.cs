@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace Kamgam.SettingsGenerator
 {
-    [CreateAssetMenu(fileName = "CameraShadowToggleConnection", menuName = "SettingsGenerator/Connection/UnifiedSettingsPlus/CameraShadowToggleConnection", order = 1)]
+    [CreateAssetMenu(fileName = "CameraShadowToggleConnection", menuName = "SettingsGenerator/Connection/UnifiedSettingsConnections/CameraShadowToggleConnection", order = 1)]
     public class CameraShadowToggleConnectionSO : BoolConnectionSO
     {
         protected CameraShadowToggleConnection _connection;

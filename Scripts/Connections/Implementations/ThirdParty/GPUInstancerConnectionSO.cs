@@ -3,7 +3,7 @@ using UnityEngine.Audio;
 
 namespace Kamgam.SettingsGenerator
 {
-    [CreateAssetMenu(fileName = "GpuInstancerConnection", menuName = "SettingsGenerator/Connection/UnifiedSettingsPlus/GpuInstancerConnection", order = 1)]
+    [CreateAssetMenu(fileName = "GpuInstancerConnection", menuName = "SettingsGenerator/Connection/UnifiedSettingsConnections/GpuInstancerConnection", order = 1)]
     public class GPUInstancerConnectionSO : OptionConnectionSO
     {
         protected GPUInstancerConnection _connection;

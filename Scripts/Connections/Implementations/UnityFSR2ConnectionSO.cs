@@ -3,7 +3,7 @@ using UnityEngine.Audio;
 
 namespace Kamgam.SettingsGenerator
 {
-    [CreateAssetMenu(fileName = "UnityFSR2Connection", menuName = "SettingsGenerator/Connection/UnifiedSettingsPlus/UnityFSR2Connection", order = 1)]
+    [CreateAssetMenu(fileName = "UnityFSR2Connection", menuName = "SettingsGenerator/Connection/UnifiedSettingsConnections/UnityFSR2Connection", order = 1)]
     public class UnityFSR2ConnectionSO : OptionConnectionSO
     {
         protected UnityFSR2Connection _connection;

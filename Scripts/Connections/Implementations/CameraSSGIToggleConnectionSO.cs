@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace Kamgam.SettingsGenerator
 {
-    [CreateAssetMenu(fileName = "CameraSSGIToggleConnection", menuName = "SettingsGenerator/Connection/UnifiedSettingsPlus/CameraSSGIToggleConnection", order = 1)]
+    [CreateAssetMenu(fileName = "CameraSSGIToggleConnection", menuName = "SettingsGenerator/Connection/UnifiedSettingsConnections/CameraSSGIToggleConnection", order = 1)]
     public class CameraSSGIToggleConnectionSO : BoolConnectionSO
     {
         protected CameraSSGIToggleConnection _connection;
